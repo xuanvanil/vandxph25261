@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <style>
+      * {
+        font-family: "Heebo", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header max-w-6xl mx-auto p-5 max-w-6xl">
+      <div class="flex justify-between">
+        <a href="./index.html"><img src="./img/Artboard 1.png" alt="" class="h-8 md:hidden h-12" /></a>
+        <button id="button" class="inline-block md:hidden">
+          <i class="fa-solid fa-bars text-xl md:text-3xl"></i>
+        </button>
+      </div>
+      <div class="flex justify-between items-center">
+        <a href="./index.html"><img src="./img/Artboard 1.png" alt="" class="h-12 hidden md:block" /></a>
+        <div class="z-auto	">
+          <ul id="main-menu" class="hidden md:grid grid-cols-3 font-bold">
+            <li><a href="./blog.html" class="hover:text-red-500">BLOG</a></li>
+            <li><a href="./work.html" class="hover:text-red-500">WORK</a></li>
+            <li><a href="./contact.html" class="hover:text-red-500">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!--  -->
+      <script>
+        const button = document.getElementById("button");
+        const menu = document.getElementById("main-menu");
+  
+        button.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+        })
+      </script>
+    </section>
+
+    <section class="max-w-[1152px] mx-auto px-4">
+      <div id="work_detail" class="max-w-[681px] mx-auto">
+        <!-- <h1
+          class="max-w-[506px] mt-[78px] mb-[30px] font-bold text-3xl md:text-4xl"
+        >
+          Designing Dashboards with usability in mind
+        </h1>
+        <div class="mt-[30px] mb-6">
+          <span class="bg-[#FF7C7C] font-black text-white px-2 rounded-xl mr-4"
+            >2020</span
+          >
+          <span class="text-lg md:text-xl"
+            >Dashboard, User Experience Design</span
+          >
+        </div>
+        <p class="mt-6 mb-12 text-base	">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <img src="./img/Rectangle 4@2x.png" alt="" class="mb-14" />
+        <h1 class="font-medium text-2xl md:text-3xl">Heading 1</h1>
+        <h2 class="my-4 font-medium text-xl	md:text-2xl">Heading 2</h2>
+        <p class="my-7 text-base	">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <img src="./img/Rectangle 5 (1).png" alt="" />
+        <img src="./img/Rectangle 6 (1).png" alt="" class="my-[27px]" /> -->
+      </div>
+      <script type="module" src="./src/js/work_detail.js"></script>
+    </section>
+
+    <section class="footer mt-20 mb-10">
+      <div class="text-3xl">
+        <ul class="flex justify-center">
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright m-auto text-center mt-4">
+        <p>
+          Copyright by
+          <a
+            href="https://www.facebook.com/duongxuanvan.official/"
+            class="text-red-500"
+            >X.nav.D</a
+          >
+          - All rights reserved
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

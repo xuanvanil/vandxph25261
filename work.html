@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.1-web/css/all.min.css" />
+  <style>
+
+  </style>
+  <style>
+    * {
+      font-family: "Heebo", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="portfolio px-4">
+    <!-- header -->
+    <!--  -->
+    <section class="header max-w-6xl mx-auto p-5 max-w-6xl">
+      <div class="flex justify-between">
+        <a href="./index.html"><img src="./img/Artboard 1.png" alt="" class="h-8 md:hidden h-12" /></a>
+        <button id="button" class="inline-block md:hidden">
+          <i class="fa-solid fa-bars text-xl md:text-3xl"></i>
+        </button>
+      </div>
+      <div class="flex justify-between items-center">
+        <a href="./index.html"><img src="./img/Artboard 1.png" alt="" class="h-12 hidden md:block" /></a>
+        <div class="">
+          <ul id="main-menu" class="hidden md:grid grid-cols-3 font-bold">
+            <li><a href="./blog.html" class="hover:text-red-500">BLOG</a></li>
+            <li><a href="./work.html" class="hover:text-red-500">WORK</a></li>
+            <li><a href="./contact.html" class="hover:text-red-500">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+      <script>
+        const button = document.getElementById("button");
+        const menu = document.getElementById("main-menu");
+
+        button.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+        })
+      </script>
+    </section>
+    <!--  -->
+    <!--  -->
+
+    <section class="max-w-[682px] mx-auto">
+      <div class="blog mt-28">
+        <h1 class="md:mb-14 font-bold text-4xl">Work</h1>
+        <div id="workShow">
+          <!-- <div class="md:flex py-10 border-b-2 border-inherit">
+            <div class="mr-5 w-full">
+              <img src="img/Rectangle 30.jpg" alt="" class="w-full" />
+            </div>
+            <div class="content">
+              <a href="">
+                <h2 class="mt-4 text-2xl font-bold md:mt-0">
+                  Designing Dashboards
+                </h2>
+              </a>
+  
+              <div class="date-info my-4">
+                <span class="bg-black text-white px-2 rounded-xl mr-6">2022</span>
+                <span class="opacity-70">Dashboard</span>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="md:flex py-10 border-b-2 border-inherit">
+            <div class="mr-5 w-full">
+              <img src="img/Rectangle 32.jpg" alt="" class="w-full" />
+            </div>
+            <div class="content">
+              <a href="">
+                <h2 class="mt-4 text-2xl font-bold md:mt-0">
+                  Vibrant Portraits of 2020
+                </h2>
+              </a>
+  
+              <div class="date-info my-4">
+                <span class="bg-black text-white px-2 rounded-xl mr-6">2018</span>
+                <span class="opacity-70">Illustration</span>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="md:flex py-10 border-b-2 border-inherit">
+            <div class="mr-5 w-full">
+              <img src="img/Rectangle 34.jpg" alt="" class="w-full" />
+            </div>
+            <div class="content">
+              <a href="">
+                <h2 class="mt-4 text-2xl font-bold md:mt-0">
+                  36 Days of Malayalam type
+                </h2>
+              </a>
+  
+              <div class="date-info my-4">
+                <span class="bg-black text-white px-2 rounded-xl mr-6">2018</span>
+                <span class="opacity-70">Typography</span>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="md:flex py-10 border-b-2 border-inherit">
+            <div class="mr-5 w-full">
+              <img src="img/Rectangle 40.png" alt="" class="w-full" />
+            </div>
+            <div class="content">
+              <a href="">
+                <h2 class="mt-4 text-2xl font-bold md:mt-0">
+                  Components
+                </h2>
+              </a>
+  
+              <div class="date-info my-4">
+                <span class="bg-black text-white px-2 rounded-xl mr-6">2018</span>
+                <span class="opacity-70">Components, Design</span>
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <script type="module" src="./src/js/main.js"></script>
+    </section>
+
+    <!-- footer -->
+    <section class="footer mt-20 mb-10">
+      <div class="text-3xl">
+        <ul class="flex justify-center">
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="" class="hover:opacity-80">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright m-auto text-center mt-4">
+        <p>
+          Copyright by
+          <a href="https://www.facebook.com/duongxuanvan.official/" class="text-red-500">X.nav.D</a>
+          - All rights reserved
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

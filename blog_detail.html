@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.1-web/css/all.min.css" />
+    <style>
+        * {
+            font-family: "Heebo", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <!--  -->
+    <section class="header max-w-6xl mx-auto p-5">
+        <div class="flex justify-between">
+            <a href="./index.html"><img src="./img/Artboard 1.png" alt="" class="h-8 md:hidden h-12" /></a>
+            <button id="button" class="inline-block md:hidden">
+                <i class="fa-solid fa-bars text-xl md:text-3xl"></i>
+            </button>
+        </div>
+        <div class="flex justify-between items-center">
+            <a href="./index.html"><img src="./img/Artboard 1.png" alt="" class="h-12 hidden md:block" /></a>
+            <div class="z-auto	">
+                <ul id="main-menu" class="hidden md:grid grid-cols-3 font-bold">
+                    <li><a href="./blog.html" class="hover:text-red-500">BLOG</a></li>
+                    <li><a href="./work.html" class="hover:text-red-500">WORK</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--  -->
+        <script>
+            const button = document.getElementById("button");
+            const menu = document.getElementById("main-menu");
+
+            button.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            })
+        </script>
+    </section>
+    <section class="max-w-6xl mx-auto my-16">
+        <div class="text-center my-4">
+            <h1 class="text-7xl font-bold">Blog details</h1>
+        </div>
+        <div id="blog_detail" class="content mt-10">
+            <!-- <div class="title">
+                <h1 class="font-bold text-3xl">Lorem ipsum dolor sit amet consectetur</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio similique unde rem adipisci quas dolor vitae.
+                </p>
+            </div>
+            <div class="date my-1 text-[12px] ml-4">
+                <span>12 Feb 2020</span>
+                <span class="mx-5">|</span>
+                <span>Figma, Icon Design</span>
+            </div>
+            <img src="./img/imgme.jpg" alt="" class="w-full">
+            <div class="description max-w-[1152px] my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsum dolorem quis voluptatem reiciendis dolores omnis
+                nihil voluptate dolorum velit amet illum aliquam delectus tenetur ad facere veritatis rem deserunt. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Nobis laborum ea, vero dignissimos rerum impedit tempore qui ipsam nostrum esse saepe
+                obcaecati quidem quae ullam in dolore quia voluptates natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                unde quibusdam, ipsam exercitationem culpa perspiciatis tempore quidem reprehenderit, maiores quia possimus beatae
+                voluptates, adipisci quae aspernatur accusamus fugit facere odit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Modi ipsa assumenda reiciendis, saepe, ullam aperiam earum similique voluptates numquam impedit magnam nam nemo nostrum
+                eaque error sint ex totam laudantium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ducimus eveniet,
+                mollitia dolores explicabo adipisci beatae quo ex eaque dolorem officia iure. Similique cumque animi officia asperiores
+                neque quos quisquam.
+            </div> -->
+            <script type="module" src="./src/js/blog_detail.js"></script>
+        </div>
+    </section>
+
+
+
+    <section class="footer mt-20 mb-10">
+        <div class="text-3xl">
+            <ul class="flex justify-center">
+                <li class="mr-4">
+                    <a href="" class="hover:opacity-80">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="mr-4">
+                    <a href="" class="hover:opacity-80">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="mr-4">
+                    <a href="" class="hover:opacity-80">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="mr-4">
+                    <a href="" class="hover:opacity-80">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright m-auto text-center mt-4">
+            <p>
+                Copyright by
+                <a href="https://www.facebook.com/duongxuanvan.official/" class="text-red-500">X.nav.D</a>
+                - All rights reserved
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
